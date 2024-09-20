@@ -1,19 +1,19 @@
 import React from 'react'
 import WorkflowButtom from './_components/workflow-button'
-
+import Workflows from './_components'
 
 type Props = {}
 
-const Workflows = (props: Props) => {
+const page = (props: Props) => {
   return (
     <div className='flex flex-col gap-4 relative'>
         <h1 className='text-4xl sticky top-0 z-[10] p-6 bg-background/50 backdrop-blur-lg flex items-center border-b justify-between'>
-            Workflows
+          Workflows
+          <WorkflowButtom />
         </h1>
-        <WorkflowButtom />
-
+        <Workflows/>
     </div>
   )
 }
 
-export default Workflows
+export default page

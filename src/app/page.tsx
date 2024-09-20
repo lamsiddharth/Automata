@@ -40,7 +40,7 @@ export default function Home() {
       <InfiniteMovingCards
         className="md:mt-[30rem] mt-[100px]"
         items={clients}
-        direction="right"
+        direction="right"  
         speed="slow"
       />
       <section>
@@ -94,7 +94,7 @@ export default function Home() {
                   Get Started Now
                 </CardItem>
               </div>
-            
+
             </CardBody>
           </CardContainer>
           <CardContainer className="inter-var">
@@ -149,7 +149,7 @@ export default function Home() {
             <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] dark:bg-black dark:border-[#E2CBFF] border-black/[0.1] w-full md:!w-[350px] h-auto rounded-xl p-6 border">
               <CardItem
                 translateZ="50"
-                className="text-xl font-bold text-neutral-600 dark:text-white "
+                className="text-xl font-bold text-neutral-600 dark:text-white"
               >
                 Pro Plan
                 <h2 className="text-6xl ">$29</h2>
