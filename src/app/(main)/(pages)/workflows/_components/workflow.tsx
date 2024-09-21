@@ -7,6 +7,9 @@ import {
 } from '@/components/ui/card'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Label } from '@/components/ui/label'
+import { Switch } from "@/components/ui/switch"
+
 
 type Props = {
     name: string
@@ -49,6 +52,19 @@ const Workflow = ({description, id, name, publish}: Props) => {
           </div>
         </Link>
       </CardHeader>
+      <div className='flex flex-col items-center gap-2 p-4'>
+        <Label
+          htmlFor="airplane-mode"
+          className="text-muted-foreground"
+        >
+          On
+        </Label>
+        <Switch
+          id="airplane-mode"
+          // onClick={onPublishFlow}
+          // defaultChecked={publish!}
+        />
+      </div>
     </Card>
   )
 }
