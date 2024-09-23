@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: 'Fuzzie.',
   description: 'Automate Your Work With Fuzzie.',
 }
+import { Toaster } from '@/components/ui/sonner'
 
 export default function RootLayout({
   children,
@@ -31,11 +32,9 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <ModalProvider>
-
-                {children}
-            </ModalProvider>
-            
-                
+              <Toaster/>
+              {children}
+            </ModalProvider> 
           </ThemeProvider>
         </body>
       </html>
